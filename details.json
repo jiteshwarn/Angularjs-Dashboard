@@ -1,0 +1,27 @@
+[
+{
+"buildversion":"1.0.0",
+"serial number":"1",
+"SPR":"HCSDM000001",
+"Submitter":"502661245"
+},
+{
+"buildversion":"1.0.1",
+"serial number":"2",
+"SPR":"HCSDM000002",
+"Submitter":"502661246"
+},
+
+{
+"buildversion":"1.0.2",
+"serial number":"3",
+"SPR":"HCSDM000003",
+"Submitter":"502661247"
+},
+{
+"buildversion":"1.0.3",
+"serial number":"4",
+"SPR":"HCSDM000004",
+"Submitter":"502661249"
+}
+]

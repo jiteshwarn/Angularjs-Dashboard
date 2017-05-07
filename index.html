@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html data-ng-app="ReportApp">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Report App</title>
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"></link>
+</head>
+<body>
+<h1>DashBoard</h1>
+<div id="header" data-ng-controller="ReportHeaderController">
+<p><strong>Build Requestor:</strong>{{name}}</p>
+<p><strong>Build Version: </strong>
+<select id="dropdownbuild" data-ng-controller="ReportBuildController">
+    <option>Select</option>
+    <option ng-repeat="build in jsonbuilds">
+        {{ build["buildversion"] }}
+    </option>
+</select>
+</p>
+<p><strong>Date:</strong>{{date}}</p>
+<section id="tabledisplay" data-ng-controller="ReportTableController">
+    <table>
+        <thead>
+            <th>serial number</th>
+            <th>SPR</th>
+            <th>Submitter</th>
+        </thead>
+        <tbody>
+            <tr ng-repeat="">
+            </tr>
+        </tbody>
+    </table>
+</section>
+</div>
+</body>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/angular/angular.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="scripts/app.js"></script>
+</html>
